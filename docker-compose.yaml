@@ -11,6 +11,7 @@ services:
   node1:
     container_name: node1
     image: hyperledger/besu:23.4.4
+    user: "1000:1000"
     entrypoint:
       - /bin/bash
       - -c
@@ -43,6 +44,7 @@ services:
   node2:
     container_name: node2
     image: hyperledger/besu:23.4.4
+    user: "1000:1000"
     entrypoint:
       - /bin/bash
       - -c
@@ -80,6 +82,7 @@ services:
   node3:
     container_name: node3
     image: hyperledger/besu:23.4.4
+    user: "1000:1000"
     entrypoint:
       - /bin/bash
       - -c
@@ -117,6 +120,7 @@ services:
   node4:
     container_name: node4
     image: hyperledger/besu:23.4.4
+    user: "1000:1000"
     entrypoint:
       - /bin/bash
       - -c
